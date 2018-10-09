@@ -1,0 +1,12 @@
+<p>
+  product-list works!
+</p>
+<div *ngFor="let item of product.mockUpData" class="items">
+  <img src="{{item.image}}" alt="" class="itemImage">
+  <p>{{item.name}}</p>
+  <p>{{item.price}}</p>
+  <p>{{item.description}}</p>
+  <img src="" alt="">
+</div>
+
+<button (click)="testButton()">click</button>
