@@ -1,12 +1,18 @@
 <p>
   product-list works!
 </p>
+<div id="categoryList">
+  <button class="categoryButton" (click)="categoryButton('all')">All Items</button>
+  <button class="categoryButton" (click)="categoryButton('food')">Food</button>
+  <button class="categoryButton" (click)="categoryButton('drink')">Drink</button>
+</div>
 <div id="productList">
-  <div *ngFor="let item of product.mockUpData" class="items">
+  <div *ngFor="let item of displayItems" class="items">
     <img src="{{item.image}}" alt="" class="itemImage">
     <p>{{item.name}}</p>
     <p>{{item.price}}$</p>
     <p>{{item.description}}</p>
+    <button>Buy Item</button>
     <img src="" alt="">
   </div>
 </div>
